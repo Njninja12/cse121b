@@ -14,7 +14,7 @@ profilePicture.src = "images/Profile Pic.jpg";
 const nameElement = document.getElementById("name");
 let foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-const imageElement = document.getElementById("img");
+const imageElement = document.querySelector("img");
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullname}</strong>`;
@@ -30,6 +30,12 @@ let fav_foods = ["pizza", "wings", "burgers", "chicken alfredo", "orange chicken
 let anotherFood = "buffalo chicken";
 fav_foods.push(anotherFood);
 foodElement.innerHTML = fav_foods.join(", ");
+foodElement.innerHTML += `<br>${fav_foods}`;
+fav_foods.shift();
+foodElement.innerHTML += `<br>${fav_foods}`;
+fav_foods.pop();
+foodElement.innerHTML += `<br>${fav_foods}`;
+
 
 
 
