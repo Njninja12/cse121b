@@ -9,6 +9,7 @@ const displayTemples = (temples) => {
     temples.forEach((temple) => {
 
         const article = document.createElement("article");
+        templesElement.appendChild(article);
         const h3 = document.createElement("h3");
         h3.textContent = temple.templeName;
         const img = document.createElement("img");
