@@ -221,16 +221,16 @@ footer {
     background-color: #111;
     color: #eee;
 }
-#temples {
+#temples, #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: .5rem;
     align-items: center;
     margin-bottom: 3rem;
 }
-#temples article {
+#temples article, #cards article {
     height: 250px;
-    margin: .5rem;
+    margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
     background-color: #eee;
@@ -240,11 +240,11 @@ footer {
     justify-content: center;
 }
 
-#temples h4 {
+#temples h4, #cards h4 {
     color: navy;
     font-size: smaller;
 }
-#temples img {
+#temples img, #cards img {
     width: 250px;
     height: auto;
     box-shadow: 0 0 30px #777;
